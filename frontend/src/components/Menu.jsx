@@ -11,7 +11,7 @@ function Menu() {
   const navigate= useNavigation()
   const handlelogout =async() => {
     try {
-      const res= await.axios.get("/api/auth/logout", {withCredentials:true})
+      const res= await axios.get("/api/auth/logout", {withCredentials:true})
       setUser(null)
       navigate("/login")
     }
